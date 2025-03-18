@@ -1,0 +1,21 @@
+name: WaterTracker
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: 16.0
+targets:
+  WaterTracker:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/WaterTracker
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.watertracker
+        DEVELOPMENT_TEAM: "" # You'll need to set this to your team ID
+    info:
+      path: Sources/WaterTracker/Info.plist
+      properties:
+        UILaunchStoryboardName: ""
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
