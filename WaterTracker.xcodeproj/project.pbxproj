@@ -10,7 +10,7 @@
 		1E889AA65B2C2D4C293777BB /* WaterTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D4900A426E76540950C42 /* WaterTrackingView.swift */; };
 		349112156B2D630E181C3281 /* WaterConsumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F8B1308A3EDABABED34BBA /* WaterConsumption.swift */; };
 		4154AFC8B3B1B4579DC06EB3 /* WaterTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975946485AFC834598113AAD /* WaterTracker.swift */; };
-		ABC123DEF456789012345678 /* WaterTrackingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF456789012345678901234 /* WaterTrackingController.swift */; };
+		ABC123DEF456789012345678 /* WaterTrackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF456789012345678901234 /* WaterTrackingPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +19,7 @@
 		83BFE5C055BF9AD72EE6FBEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		975946485AFC834598113AAD /* WaterTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTracker.swift; sourceTree = "<group>"; };
 		9DB159053107388D9B89CFBA /* WaterTracker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WaterTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEF456789012345678901234 /* WaterTrackingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackingController.swift; sourceTree = "<group>"; };
+		DEF456789012345678901234 /* WaterTrackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackingPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -46,7 +46,7 @@
 				975946485AFC834598113AAD /* WaterTracker.swift */,
 				2AEA64D8C4DB374FC64A6D86 /* Models */,
 				C739B9C49E0E68EF068155A2 /* Views */,
-				F123456789ABCDEF01234567 /* Controllers */,
+				F123456789ABCDEF01234567 /* Presenters */,
 			);
 			name = WaterTracker;
 			path = Sources/WaterTracker;
@@ -68,12 +68,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F123456789ABCDEF01234567 /* Controllers */ = {
+		F123456789ABCDEF01234567 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				DEF456789012345678901234 /* WaterTrackingController.swift */,
+				DEF456789012345678901234 /* WaterTrackingPresenter.swift */,
 			);
-			path = Controllers;
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +133,7 @@
 				349112156B2D630E181C3281 /* WaterConsumption.swift in Sources */,
 				4154AFC8B3B1B4579DC06EB3 /* WaterTracker.swift in Sources */,
 				1E889AA65B2C2D4C293777BB /* WaterTrackingView.swift in Sources */,
-				ABC123DEF456789012345678 /* WaterTrackingController.swift in Sources */,
+				ABC123DEF456789012345678 /* WaterTrackingPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

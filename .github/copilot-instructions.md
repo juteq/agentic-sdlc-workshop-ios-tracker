@@ -12,7 +12,7 @@ Rules:
 
 ### Code
 Rules:
-- Organize the code using MVC architecture
+- Organize the code using MVP architecture
 - Use SOLID principles
 - Structure code accordingly
 

@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct WaterTrackingView: View {
-    @EnvironmentObject private var controller: WaterTrackingController
+    @EnvironmentObject private var presenter: WaterTrackingPresenter
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("\(controller.amountInOunces) oz")
+            Text("\(presenter.amountInOunces) oz")
                 .font(.system(size: 48, weight: .bold))
 
             Text("consumed today")
@@ -13,13 +13,13 @@ struct WaterTrackingView: View {
                 .foregroundColor(.secondary)
 
             HStack(spacing: 30) {
-                Button(action: controller.decrement) {
+                Button(action: presenter.decrement) {
                     Label("-8 oz", systemImage: "minus.circle.fill")
                         .font(.title2)
                 }
-                .disabled(controller.amountInOunces < 8)
+                .disabled(presenter.amountInOunces < 8)
 
-                Button(action: controller.increment) {
+                Button(action: presenter.increment) {
                     Label("+8 oz", systemImage: "plus.circle.fill")
                         .font(.title2)
                 }

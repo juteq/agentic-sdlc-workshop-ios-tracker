@@ -2,12 +2,12 @@ import SwiftUI
 
 @main
 struct WaterTrackerApp: App {
-    @StateObject private var waterController = WaterTrackingController()
+    @StateObject private var presenter = WaterTrackingPresenter()
 
     var body: some Scene {
         WindowGroup {
             WaterTrackingView()
-                .environmentObject(waterController)
+                .environmentObject(presenter)
         }
     }
 }
